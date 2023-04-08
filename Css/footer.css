@@ -1,0 +1,76 @@
+.footer{
+    background-color: rgb(78, 61, 53);
+}
+
+.ending_content{
+    margin-left: 5px;
+}
+.contact_us_content{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.hover_text{
+    color: white;
+    text-decoration: none;
+}
+
+.hover_text:hover {
+    color: #48ede2;
+    
+}
+
+.categories_class p:hover{
+    transform: scale(1.1) !important;
+    
+}
+
+.hover_logo1:hover{
+    color: #4267B2 !important;
+    transition: all 0.2s ease; 
+}
+
+.hover_logo2:hover{
+    color: #00acee !important;
+    transition: all 0.2s ease; 
+}
+
+.hover_logo3:hover{
+    color: #5851DB  !important;
+    transition: all 0.2s ease; 
+}
+
+.hover_logo4:hover{
+    color: #0072b1 !important;
+    transition: all 0.2s ease; 
+}
+
+.hover_logo5:hover{
+    color: #c4302b !important;
+    transition: all 0.2s ease; 
+}
+
+.media_items li:hover{
+    transform: scale(1.1);
+}
+
+@media (min-width:1000px) and (max-width:1200px){
+    iframe{
+        width: 700px;
+    }
+}
+
+@media (min-width:700px) and (max-width:1000px){
+    iframe{
+        width: 600px;
+    }
+}
+
+@media (min-width:550px) and (max-width:700px){
+    iframe{
+        width: 500px;
+    }
+}
+
+

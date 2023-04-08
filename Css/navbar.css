@@ -1,0 +1,7 @@
+.nav_hover li a:hover{
+    border: 1px solid #0056b3;
+    color: #0056b3 !important; 
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,398 @@
+
+
+.Head{
+  border: 1px solid black;
+    
+}
+
+.products_section{
+    width: 100%; 
+        
+    
+}
+
+.product_title{
+  font-size: 32px;
+    font-weight: bold;
+    border: 1px solid black;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(50, 41, 37);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    
+    
+  }
+  
+
+  .product_center{
+    width: 100%;
+    display: grid;
+    place-items: center;
+  
+  }
+.products{
+
+  width: 1000px;
+  display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+}
+
+
+
+.product-cart {
+  position: relative;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+    background-color: rgb(182, 223, 235);
+  }
+  
+  .product-image {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .product-details {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  
+  .product-details h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  
+  .product-details p {
+    margin: 0;
+  }
+  
+  
+  
+  
+  .products_section{
+    margin-bottom: 150px;
+  }
+
+
+
+  
+  /* pop up window for products */
+  .popup_window {
+    position: fixed;
+    z-index: 50;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 530px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    background-position: fixed;
+    transition: all 0.2s ease-in-out;
+    margin-top: 35px;
+    border: 0.5px solid rgba(10, 10, 10, 0.256);
+    border-radius: 7px;
+    
+    
+  }
+  
+  .pics{
+    width: 55%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    float: left;
+  }
+  .pic{
+    height: 200px;
+    width: 48%;
+  }
+  
+  .pic img{
+    height: 200px;
+    width: 100%;
+  }
+  
+  .description{
+    width: 42%;
+    text-align: center;
+    float: left;
+    margin-top: 70px;
+  }
+  
+  
+  .buttons{
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    
+    
+  }
+
+  
+  
+  
+  
+  .description h6 , h4{
+    font-weight: bolder;
+    font-size: larger;
+  }
+  
+  /* Styling for the order button */
+  .order-now {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Styling for the Close button */
+  .close-btn {
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  
+  .promo-btn {
+    background-color: #37cc64;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effects for both buttons */
+  .order-now:hover, .close-btn:hover , .promo-btn:hover {
+    opacity: 0.8;
+  }
+  
+  
+   
+/* content for promo screen */
+
+
+.promo_center{
+  display: flex;
+  justify-content: center;
+}
+
+.promo_section {
+  background-color: rgb(30, 22, 16);
+  padding: 24px;
+  border: 1px solid #ccc;
+  width: 80%;
+  position: fixed;
+  z-index: 50;
+  top: 50%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+.promo_section h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: white;
+}
+
+.promo_section .form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.promo_section .form input[type="text"] {
+  flex: 1;
+  height: 36px;
+  padding: 0 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 65%;
+}
+
+.promo_section .form #apply {
+  height: 36px;
+  padding: 0 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  width: 33%;
+}
+
+.promo_section .form #apply:hover {
+  background-color: #0062cc;
+}
+
+
+
+ @media (min-width:720px) and (max-width:1000px) {
+    .products{
+        width: 680px;
+        
+    }
+
+    .popup_window{
+        width: 630px;
+    }
+
+  
+    
+
+ } 
+
+ @media (max-width:720px){
+    .products{
+      width: 350px;
+    }
+
+    .popup_window{
+      width: 450px;
+      height: 650px;
+      
+    }
+
+    .pics{
+      width: 100%;
+    }
+
+    .pic{
+      height: 140px;
+    }
+
+    .description{
+      width: 100%;
+      margin-top: 55px;
+      
+    }
+
+    .description h6 , h4{
+      font-size: medium;
+    }
+
+    .buttons{
+      padding: 8px;
+    }
+ }
+
+ @media (max-width:500px){
+    .products{
+      width: 350px;
+    }
+
+    .popup_window{
+      width: 400px;
+      height: 650px;
+      
+    }
+
+    .pics{
+      width: 100%;
+    }
+
+    .pic{
+      height: 140px;
+    }
+
+    .description{
+      width: 100%;
+      margin-top: 55px;
+      
+    }
+
+    .description h6 , h4{
+      font-size: medium;
+    }
+
+    .buttons{
+      padding: 6px;
+    }
+ }
+
+
+   
+ @media (max-width:430px){
+    .products{
+      width: 300px;
+    }
+
+    .popup_window{
+      width: 350px;
+      height: 580px;
+    }
+    .pics{
+      width: 100%;
+      height: 250px;
+    }
+    .pic{
+      height: 140px;
+      width: 46%;
+      
+    }
+
+    .description{
+      width: 100%;
+      margin-top: 105px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .description h6 , p {
+      margin-right: 10px;
+    }
+
+    .description h6, h4{
+      font-size: small;
+    }
+
+    .buttons button{
+      padding: 7px 14px;
+      font-size: 14px;
+    }
+ }
